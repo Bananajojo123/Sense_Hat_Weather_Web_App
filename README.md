@@ -1,2 +1,2 @@
-# Sense_Hat_Weather_Web_App
+# Sense Hat Weather Web App
 Raspberry Pi Sense Hat Weather Web App.
