@@ -40,7 +40,12 @@ def index():
     t_corr = t - ((t_cpu - t) / 1.5)
     t_corr = get_smooth(t_corr)
 
-    return "Temperatura: %s <br>Presion: %s <br>Humedad: %s" % (t_corr, p, h)
+    t = round(t, 1)
+    t_corr = round(t_corr, 1)
+    h = round(h, 1)
+    p = round(p, 1)
+
+    return "Temperatura: %s <br> Temperatura corregida: %s <br>Presion: %s <br>Humedad: %s" % (t, t_corr, p, h)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
