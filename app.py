@@ -21,7 +21,7 @@ def get_smooth(x):
     get_smooth.t[2] = get_smooth.t[1]
     get_smooth.t[1] = get_smooth.t[0]
     get_smooth.t[0] = x
-    xs = (get_smooth.t[0] + get_smooth.t[1] + get_smooth[2]) / 3
+    xs = (get_smooth.t[0] + get_smooth.t[1] + get_smooth.t[2]) / 3
     return xs
 
 
